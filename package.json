@@ -1,0 +1,15 @@
+{
+  "name": "kaparacetxiTwitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "mute": "node mute.js",
+    "tweet": "node tweetar.js",
+    "dm": "node dm.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "twitter": "^1.7.1"
+  }
+}
