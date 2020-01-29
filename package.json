@@ -6,7 +6,8 @@
   "scripts": {
     "mute": "node mute.js",
     "tweet": "node tweetar.js",
-    "dm": "node dm.js"
+    "dm": "node dm.js",
+    "place": "node getPlaceId.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10",
