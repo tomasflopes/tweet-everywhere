@@ -9,7 +9,7 @@ const params = {
 
 tt.get('users/lookup', params, async (error, data) => {
   if (!error) {
-    module.exports = data[0].id;
+    console.log(data[0].id)
   } else {
     console.log(error);
   }

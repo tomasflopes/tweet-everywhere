@@ -5,8 +5,8 @@ const tweet = readline.question("Your tweet: ").trim();
 
 const params = {
   status: tweet,
-  lat: 38.8727141,
-  long: -9.078514,
+  lat: 48.9986053,
+  long: 28.5313095,
   display_coordinates: true,
 }
 
