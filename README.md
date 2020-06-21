@@ -1,18 +1,34 @@
-# Twitter API
+<h1 align="center">Welcome to TweetEverywhere 👋</h1>
+<p>
+  <a href="https://twitter.com/tomas050302" target="_blank">
+    <img alt="Twitter: tomas050302" src="https://img.shields.io/twitter/follow/tomas050302.svg?style=social" />
+  </a>
+</p>
 
-The API used in this project is up to the date of 20/01/2020 and it's the official API provided by Twitter.
+> Easy UI to tweet for wherever you like at any time!
 
-# Using the app
+## Install
 
-In order to use the app you need to create a `settings.js` file inside the `utils` folder and paste your personal unique keys provided by tweeter when you create an App.
+```sh
+yarn
+```
 
-## Getting the keys
+## Usage
 
-To get the keys you must create an app at [Twitter Developers](https://developer.twitter.com/en/apps), then it will get you 4 unique keys that you must replace in this sample code.
+```sh
+yarn start
+```
 
-`module.exports = {
-  consumer_key: 'API KEY',
-  consumer_secret: 'API Secret',
-  access_token_key: 'Access Token',
-  access_token_secret: 'Access Token Secret'
-}`
+## Author
+
+👤 **Tomás Lopes**
+
+* Twitter: [@tomas050302](https://twitter.com/tomas050302)
+* Github: [@tomas050302](https://github.com/tomas050302)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
