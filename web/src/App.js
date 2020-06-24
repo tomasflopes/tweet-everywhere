@@ -12,15 +12,11 @@ export default function App() {
   const [data, setData] = useState({});
 
   async function handleSubmit() {
-    const params = window.location.href.split('/?')[1];
-    const tokens = params.split('&');
+    const [, , , token, secret] = window.location.href.split('/');
 
-    const response = await api.post('/tweetar', {
+    const response = await api.post(`/tweetar/${token}/${secret}`, {
       tweet,
       spot
-    }, {
-      token: tokens[0],
-      secret: tokens[1]
     }).catch(error => {
       console.log(error);
     });

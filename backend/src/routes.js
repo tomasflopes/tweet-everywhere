@@ -25,10 +25,10 @@ routes.get('/auth/twitter/callback',
   passport.authenticate('twitter', { session: false }),
   (req, res) => {
     req.session.user = req.user;
-    res.redirect(`http://localhost:3000?token=${req.user.token}&secret=${req.user.tokenSecret}`);
+    res.redirect(`http://localhost:3000/${req.user.token}/${req.user.tokenSecret}`);
   });
 
 routes.post('/mute', mute);
-routes.post('/tweetar', tweetar);
+routes.post('/tweetar/:token?/:secret?', tweetar);
 
 module.exports = routes;

@@ -3,12 +3,7 @@ const twitter = require('twitter');
 const opencage = require('opencage-api-client');
 
 async function tweetar(request, response) {
-  const [, query] = request.headers.referer.split('/?');
-  const [tokenValue, secretValue] = query.split('&');
-  const [, token] = tokenValue.split('=');
-  const [, secret] = secretValue.split('=');
-
-  console.log(token, secret);
+  const { token, secret } = request.params;
 
   const tt = new twitter({
     consumer_key: process.env.CONSUMER_KEY,
