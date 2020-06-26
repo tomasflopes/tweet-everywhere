@@ -44,7 +44,7 @@ The OAuth1.0 from Twitter only works with sessions in Node, this way, I needed t
 
 Give a ⭐️ if this project helped you!
 
-You can support me ($) in [BuyMeACoffee](buymeacoff.ee/tomas050302)
+You can support in [BuyMeACoffee ☕](buymeacoff.ee/tomas050302)
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
