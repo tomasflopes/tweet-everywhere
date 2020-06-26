@@ -43,8 +43,7 @@ The OAuth1.0 from Twitter only works with sessions in Node, this way, I needed t
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tomas050302" data-description="Support me on Buy me a coffee!" data-message="You can now buy me a coffee!" data-color="#FF813F" data-position="left" data-x_margin="15" data-y_margin="18"></script>
+You can support me ($) in [BuyMeACoffee](buymeacoff.ee/tomas050302)
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
