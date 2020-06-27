@@ -26,7 +26,9 @@ export default function App() {
 
   return (
     <>
-      <a href="http://localhost:3333/auth/twitter">Login</a>
+      <div className="login">
+        <a href="http://localhost:3333/auth/twitter">Login</a>
+      </div>
       <div className="form">
         <label htmlFor="tweet">Tweet</label>
         <input type="text" onChange={event => setTweet(event.currentTarget.value)} /><br />

@@ -1,18 +1,25 @@
 body {
   background: #15202b;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
-  width: 360px;
-  margin: 13% 38%;
   display: flex;
   flex: 1;
+  margin-top: 20%;
+  height: 240px;
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 button {
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -21,10 +28,9 @@ button {
   width: 240px;
   background: #1da1f2;
   border: 0;
+  margin-top: 20px;
   padding: 15px 30px;
   text-align: center;
-  margin-top: 25px;
-  margin-left: 15%;
 }
 
 .tweetText {
@@ -151,4 +157,17 @@ label {
   flex: 1;
   color: #1da1f2;
   font-size: 16px;
+}
+
+a {
+  flex: 1;
+  font-size: 18px;
+}
+
+.login {
+  display: flex;
+  margin-top: 5px;
+  flex: 1;
+  align-self: flex-start;
+  width: 120px;
 }
