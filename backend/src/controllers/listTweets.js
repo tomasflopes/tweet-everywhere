@@ -1,15 +1,20 @@
-const readline = require('readline-sync');
+const twitter = require('twitter');
 
-const user = readline.question("Insert the @ of the person: ").trim();
+async function listTweets(request, response) {
+  const { token, secret } = request.params;
 
-const params = {
-  screen_name: user,
+  const tt = new twitter({
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token_key: token,
+    access_token_secret: secret
+  });
+
+  tt.get('statuses/user_timeline', (error, data) => {
+    if (!error) return response.json(data);
+
+    return response.json(error);
+  });
 }
 
-tt.get('statuses/user_timeline', params, (error, data) => {
-  if (!error) {
-    console.log(data);
-  } else {
-    console.log(error);
-  }
-});
+module.exports = listTweets;

@@ -4,6 +4,7 @@ const { Strategy } = require('passport-twitter');
 
 const mute = require('./controllers/mute');
 const tweetar = require('./controllers/tweetar');
+const listTweets = require('./controllers/listTweets');
 
 passport.use(new Strategy({
   consumerKey: process.env.CONSUMER_KEY,
@@ -28,6 +29,7 @@ routes.get('/auth/twitter/callback',
     res.redirect(`http://localhost:3000/${req.user.token}/${req.user.tokenSecret}`);
   });
 
+routes.get('/timeline/:token/:secret', listTweets);
 routes.post('/mute', mute);
 routes.post('/tweetar/:token?/:secret?', tweetar);
 
